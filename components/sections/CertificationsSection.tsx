@@ -52,10 +52,10 @@ const CertificationCard: React.FC<{ text: string }> = ({ text }) => {
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           whileHover={{ scale: 1.05, boxShadow: '0 0 25px 3px rgba(0, 255, 255, 0.5)' }}
-          className="relative p-6 bg-white/5 backdrop-blur-md border border-cyan-glow/20 rounded-xl shadow-lg h-full flex items-center justify-center text-center min-h-[160px]"
+          className="relative p-4 sm:p-6 bg-white/5 backdrop-blur-md border border-cyan-glow/20 rounded-xl shadow-lg h-full flex items-center justify-center text-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
         >
           <div style={{ transform: 'translateZ(40px)' }}>
-            <h3 className="font-body text-lg font-semibold text-white">{text}</h3>
+            <h3 className="font-body text-sm sm:text-base font-semibold text-white">{text}</h3>
           </div>
         </motion.div>
       </a>
@@ -67,17 +67,17 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({ is
   return (
     <Section id="certifications">
       <div className="w-full max-w-6xl mx-auto">
-        <TypingText text="Certifications & Achievements" className="mb-12 text-center" isActive={isActive} />
+        <TypingText text="Certifications & Achievements" className="mb-8 md:mb-12 text-center" isActive={isActive} />
         <div className="w-full overflow-hidden py-4 marquee-container" style={{ perspective: '1000px' }}>
-          <div className="flex w-max space-x-8 animate-marquee">
+          <div className="flex w-max space-x-4 md:space-x-6 animate-marquee">
             {/* Render cards twice for a seamless loop */}
             {CERTIFICATIONS.map((cert, index) => (
-              <div key={index} className="w-72 md:w-80 flex-shrink-0">
+              <div key={index} className="w-52 sm:w-60 md:w-72 lg:w-80 flex-shrink-0">
                   <CertificationCard text={cert} />
               </div>
             ))}
             {CERTIFICATIONS.map((cert, index) => (
-              <div key={`duplicate-${index}`} className="w-72 md:w-80 flex-shrink-0">
+              <div key={`duplicate-${index}`} className="w-52 sm:w-60 md:w-72 lg:w-80 flex-shrink-0">
                   <CertificationCard text={cert} />
               </div>
             ))}

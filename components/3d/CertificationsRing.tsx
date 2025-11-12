@@ -1,4 +1,3 @@
-// FIX: Add React Three Fiber types to resolve JSX element errors for custom components.
 /// <reference types="@react-three/fiber" />
 import React, { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';

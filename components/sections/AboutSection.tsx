@@ -23,8 +23,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ isActive }) => {
   return (
     <Section id="about">
       <div className="max-w-3xl text-center">
-        <TypingText text="About Me" className="mb-6" isActive={isActive} />
-        <motion.p className="text-lg md:text-xl leading-relaxed text-gray-300" initial={{ opacity: 0, y:20 }} whileInView={{ opacity: 1, y:0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+        <TypingText text="About Me" className="mb-4 md:mb-6" isActive={isActive} />
+        <motion.p className="text-base md:text-lg leading-relaxed text-gray-300" initial={{ opacity: 0, y:20 }} whileInView={{ opacity: 1, y:0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
           I value every opportunity and channel my energy into meaningful work. Coming from an electronics background, I built my path in software with curiosity, discipline, and hunger to learn. I explore deeply, learn from talented minds, and strive to deliver my best — focusing on impact through consistency, focus, and craftsmanship.
         </motion.p>
         <motion.div 

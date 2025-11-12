@@ -18,7 +18,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isActive }) => {
   return (
     <Section id="contact">
       <div className="relative z-10 text-center flex flex-col items-center justify-center h-full">
-        <TypingText text="Get In Touch" className="mb-8 text-center" isActive={isActive} />
+        <TypingText text="Get In Touch" className="mb-4 md:mb-8 text-center" isActive={isActive} />
         <motion.div
           className="p-8 bg-white/5 backdrop-blur-md border border-cyan-glow/20 rounded-xl shadow-glow-cyan max-w-lg w-full"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -30,7 +30,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isActive }) => {
             {contactLinks.map((link) => (
               <div key={link.name} className="text-left">
                 <p className="text-cyan-glow text-sm">{link.name}</p>
-                <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-white hover:underline break-all">
+                <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-white text-sm md:text-base hover:underline break-all">
                   {link.value}
                 </a>
               </div>
@@ -38,7 +38,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isActive }) => {
           </div>
         </motion.div>
       </div>
-      <footer className="absolute bottom-4 text-center w-full text-gray-500 text-sm">
+      <footer className="absolute bottom-4 text-center w-full text-gray-500 text-xs sm:text-sm">
         <p>Crafted with purpose by Varma © 2025</p>
       </footer>
     </Section>

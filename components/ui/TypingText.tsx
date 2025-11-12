@@ -35,7 +35,7 @@ export const TypingText: React.FC<TypingTextProps> = ({ text, className = '', is
 
   return (
     <h2
-      className={`font-heading text-4xl md:text-5xl font-bold text-cyan-glow ${className}`}
+      className={`font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-glow ${className}`}
       aria-label={text}
       style={{ 
         minHeight: '1.2em', // Prevents layout shift

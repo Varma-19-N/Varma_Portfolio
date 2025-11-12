@@ -21,13 +21,13 @@ const TimelineItem: React.FC<{ item: typeof EDUCATION[0]; isLast: boolean }> = (
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.6 }}
     >
-      <h3 className="font-heading text-xl font-semibold text-white">{item.degree}</h3>
+      <h3 className="font-heading text-lg md:text-xl font-semibold text-white">{item.degree}</h3>
       <p className="italic text-cyan-glow/80 mt-1">{item.institution}</p>
-      <div className="text-sm text-gray-400 mt-1 flex space-x-4">
+      <div className="text-sm text-gray-400 mt-2 flex flex-col items-start space-y-1 sm:flex-row sm:space-y-0 sm:space-x-4">
         {item.period && <span>📆 {item.period}</span>}
         <span>{item.details}</span>
       </div>
-      <p className="mt-2 text-gray-300">{item.description}</p>
+      <p className="mt-2 text-gray-300 text-sm md:text-base">{item.description}</p>
     </motion.div>
   </div>
 );
@@ -36,7 +36,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ isActive }) 
   return (
     <Section id="education">
       <div className="w-full max-w-3xl">
-        <TypingText text="Education" className="mb-12 text-center" isActive={isActive} />
+        <TypingText text="Education" className="mb-8 md:mb-12 text-center" isActive={isActive} />
         <div className="relative">
           {EDUCATION.map((item, index) => (
             <TimelineItem key={index} item={item} isLast={index === EDUCATION.length - 1} />

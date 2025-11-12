@@ -53,19 +53,19 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           whileHover={{ scale: 1.05, boxShadow: '0 0 25px 3px rgba(0, 255, 255, 0.5)' }}
-          className="relative p-6 bg-white/5 backdrop-blur-md border border-cyan-glow/20 rounded-xl shadow-lg h-full"
+          className="relative p-4 md:p-5 lg:p-6 bg-white/5 backdrop-blur-md border border-cyan-glow/20 rounded-xl shadow-lg h-full"
         >
           <div style={{ transform: 'translateZ(40px)' }}>
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="font-heading text-2xl font-bold text-white">{project.title}</h3>
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="font-heading text-base md:text-lg lg:text-xl font-bold text-white">{project.title}</h3>
               <div className="text-gray-400">
                 <GitHubIcon className="w-6 h-6" />
               </div>
             </div>
-            <p className="text-gray-300 mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2">
+            <p className="text-gray-300 mb-2 sm:mb-3 text-xs sm:text-sm">{project.description}</p>
+            <div className="flex flex-wrap gap-1.5">
               {project.tech.map((tech) => (
-                <span key={tech} className="px-3 py-1 text-xs bg-cyan-glow/10 text-cyan-glow rounded-full">
+                <span key={tech} className="px-2 py-0.5 text-[10px] sm:text-xs bg-cyan-glow/10 text-cyan-glow rounded-full">
                   {tech}
                 </span>
               ))}
@@ -81,9 +81,9 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ isActive }) => {
   return (
     <Section id="projects">
-      <div className="w-full max-w-6xl mx-auto">
-        <TypingText text="Projects" className="mb-12 text-center" isActive={isActive} />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" style={{ perspective: '1000px' }}>
+      <div className="w-full max-w-6xl mx-auto -mt-24 sm:-mt-16 md:mt-0 px-4 lg:px-8">
+        <TypingText text="Projects" className="mb-2 sm:mb-8 md:mb-12 text-center" isActive={isActive} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6" style={{ perspective: '1000px' }}>
           {PROJECTS.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

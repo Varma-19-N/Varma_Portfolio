@@ -36,7 +36,7 @@ export const HeroSection: React.FC = () => {
           background: linear-gradient(90deg, #00ffff, #6a0dad);
           color: #05060a;
           border-radius: 9999px;
-          padding: 0.5rem 1.25rem;
+          padding: 0.4rem 1rem;
           font-weight: 600;
           font-family: 'Space Grotesk', sans-serif;
           box-shadow:
@@ -45,8 +45,15 @@ export const HeroSection: React.FC = () => {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          min-width: 260px;
+          min-width: 220px;
           overflow: hidden;
+        }
+        
+        @media (min-width: 768px) {
+          .role-capsule {
+            min-width: 260px;
+            padding: 0.5rem 1.25rem;
+          }
         }
 
         .role-text {
@@ -62,7 +69,7 @@ export const HeroSection: React.FC = () => {
         transition={{ duration: 0.8 }}
       >
         {/* --- Animated Name --- */}
-        <div className="py-2 font-heading text-5xl md:text-7xl font-bold tracking-wider text-center whitespace-nowrap">
+        <div className="py-2 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider text-center">
           {!decryptionComplete ? (
             <DecryptedText
               text={name}
@@ -88,7 +95,7 @@ export const HeroSection: React.FC = () => {
 
         {/* --- Rotating Capsule for Roles --- */}
         <div className="mt-6">
-          <div className="role-capsule text-lg md:text-xl">
+          <div className="role-capsule text-base md:text-xl">
             <AnimatePresence mode="wait">
               <motion.span
                 key={index}
@@ -120,7 +127,7 @@ export const HeroSection: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.5 + i * 0.1 }} // Increased delay
             >
-              <Icon className="w-8 h-8" />
+              <Icon className="w-7 h-7 md:w-8 md:h-8" />
             </motion.a>
           ))}
         </div>

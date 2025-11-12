@@ -8,7 +8,7 @@ export const ConsistencySection: React.FC = () => {
       <div className="absolute inset-0 bg-[radial-gradient(#00ffff1a_1px,transparent_1px)] [background-size:32px_32px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       <div className="relative z-10 text-center max-w-3xl">
         <motion.h2 
-          className="font-heading text-3xl md:text-4xl font-bold italic text-white"
+          className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold italic text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -17,7 +17,7 @@ export const ConsistencySection: React.FC = () => {
           "Discipline is the bridge between goals and achievement."
         </motion.h2>
         <motion.p 
-          className="mt-4 text-lg text-gray-300"
+          className="mt-4 text-base md:text-lg text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
