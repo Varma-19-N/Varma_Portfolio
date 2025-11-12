@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from '../ui/Section';
-import { motion, useMotionValue, useTransform, useSpring } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { CERTIFICATIONS } from '../../constants';
 import { TypingText } from '../ui/TypingText';
 

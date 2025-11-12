@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { motion } from 'framer-motion';
 
 const CARD_OFFSET = 24; // px, vertical offset for cards in the stack
 const SCALE_FACTOR = 0.05; // scale difference between stacked cards
@@ -12,7 +12,7 @@ export const ScrollStack = ({ children }) => {
   const [isScrolling, setIsScrolling] = useState(false);
   const touchStartY = useRef(0);
 
-  const changeSection = (newDirection: number) => {
+  const changeSection = useCallback((newDirection: number) => {
     if (isScrolling) return;
 
     const newIndex = activeIndex + newDirection;
@@ -22,7 +22,7 @@ export const ScrollStack = ({ children }) => {
       setActiveIndex(newIndex);
       setTimeout(() => setIsScrolling(false), SCROLL_COOLDOWN);
     }
-  };
+  }, [activeIndex, isScrolling, numSections]);
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
@@ -59,7 +59,7 @@ export const ScrollStack = ({ children }) => {
         container.removeEventListener('touchmove', handleTouchMove);
       }
     };
-  }, [activeIndex, isScrolling, numSections]);
+  }, [changeSection]);
 
   return (
     <div id="scroll-stack-container" className="relative h-screen w-full">

@@ -1,17 +1,10 @@
+// FIX: Added a triple-slash directive to include type definitions for @react-three/fiber, which is required to use its custom JSX elements like `group` and `meshStandardMaterial` in TypeScript.
+/// <reference types="@react-three/fiber" />
 import React, { useRef, useState } from 'react';
-// FIX: Use a type-only import for `ThreeElements` to resolve JSX intrinsic element type errors.
-import { useFrame, type ThreeElements } from '@react-three/fiber';
-import { Plane, Text } from 'https://aistudiocdn.com/@react-three/drei@^10.7.6';
-import * as THREE from 'https://aistudiocdn.com/three@^0.181.1';
+import { useFrame } from '@react-three/fiber';
+import { Plane, Text } from '@react-three/drei';
+import * as THREE from 'three';
 import { CERTIFICATIONS } from '../../constants';
-
-// Extend the global JSX namespace to include react-three-fiber elements.
-// This resolves TypeScript errors for custom elements like `<group>` and `<meshStandardMaterial>`.
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
 
 // A single glassmorphic certification card
 const Card: React.FC<{

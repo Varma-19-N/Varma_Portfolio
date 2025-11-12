@@ -1,19 +1,11 @@
+// FIX: Added a triple-slash directive to include type definitions for @react-three/fiber, which is required to use its custom JSX elements like `group` in TypeScript.
+/// <reference types="@react-three/fiber" />
 import React, { useRef, useState, useMemo, Suspense } from 'react';
-// FIX: Use a type-only import for `ThreeElements` to resolve JSX intrinsic element type errors.
-import { useFrame, type ThreeElements } from '@react-three/fiber';
-import { Text, Html } from 'https://aistudiocdn.com/@react-three/drei@^10.7.6';
-import * as THREE from 'https://aistudiocdn.com/three@^0.181.1';
-import { inSphere } from 'https://aistudiocdn.com/maath@^0.10.8/random';
+import { useFrame } from '@react-three/fiber';
+import { Text, Html } from '@react-three/drei';
+import * as THREE from 'three';
+import { inSphere } from 'maath/random';
 import { Group } from 'three';
-
-
-// Extend the global JSX namespace to include react-three-fiber elements.
-// This resolves TypeScript errors for custom elements like `<group>`.
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
 
 interface SkillProps {
   name: string;

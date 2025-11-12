@@ -1,14 +1,14 @@
 import React from 'react';
 import { Section } from '../ui/Section';
 import { TECH_STACK } from '../../constants';
-import { motion } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion } from 'framer-motion';
 import { TypingText } from '../ui/TypingText';
 
 interface TechStackSectionProps {
   isActive?: boolean;
 }
 
-const TechCard: React.FC<{ name: string }> = ({ name }) => {
+const TechCard: React.FC<{ name: string; }> = ({ name }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1, y: -5, boxShadow: '0 0 20px rgba(0, 255, 255, 0.4)' }}
@@ -27,14 +27,14 @@ export const TechStackSection: React.FC<TechStackSectionProps> = ({ isActive }) 
         <div className="w-full overflow-hidden py-4 marquee-container">
           <div className="flex w-max space-x-8 animate-marquee-tech">
             {/* Render cards twice for a seamless loop */}
-            {TECH_STACK.map((skillName, index) => (
+            {TECH_STACK.map((skill, index) => (
               <div key={index} className="flex-shrink-0">
-                <TechCard name={skillName} />
+                <TechCard name={skill} />
               </div>
             ))}
-            {TECH_STACK.map((skillName, index) => (
+            {TECH_STACK.map((skill, index) => (
               <div key={`duplicate-${index}`} className="flex-shrink-0">
-                <TechCard name={skillName} />
+                <TechCard name={skill} />
               </div>
             ))}
           </div>

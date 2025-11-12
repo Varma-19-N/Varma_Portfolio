@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from '../ui/Section';
-import { motion, useMotionValue, useTransform, useSpring } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { PROJECTS, Project } from '../../constants';
 import { GitHubIcon } from '../ui/Icons';
 import { TypingText } from '../ui/TypingText';

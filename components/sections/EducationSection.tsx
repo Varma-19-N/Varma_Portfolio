@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from '../ui/Section';
-import { motion } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion } from 'framer-motion';
 import { EDUCATION } from '../../constants';
 import { TypingText } from '../ui/TypingText';
 

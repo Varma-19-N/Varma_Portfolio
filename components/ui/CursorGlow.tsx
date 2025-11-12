@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion } from 'framer-motion';
 
 export const CursorGlow: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 });

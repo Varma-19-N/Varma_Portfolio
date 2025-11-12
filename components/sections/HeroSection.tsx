@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion, AnimatePresence } from 'framer-motion';
 import { SOCIAL_LINKS } from '../../constants';
 import { Section } from '../ui/Section';
 import { DecryptedText } from '../ui/DecryptedText';

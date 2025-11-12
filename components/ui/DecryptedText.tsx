@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { motion } from 'https://aistudiocdn.com/framer-motion@^12.23.24';
+import { motion } from 'framer-motion';
 
 const styles = {
   wrapper: {
