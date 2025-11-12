@@ -1,0 +1,141 @@
+import React from "react";
+
+// --- SOCIAL ICONS ---
+
+export const GitHubIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M12 .5C5.37.5 0 5.87 0 12.5a12 12 0 008.21 11.45c.6.11.82-.26.82-.58v-2.16c-3.34.73-4.05-1.43-4.05-1.43a3.18 3.18 0 00-1.33-1.76c-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.26 1.83 1.26 1.07 1.82 2.8 1.3 3.48 1 .11-.77.42-1.3.76-1.6-2.67-.31-5.47-1.33-5.47-5.94 0-1.31.47-2.39 1.24-3.23a4.34 4.34 0 01.12-3.14s1.01-.33 3.3 1.25c.94-.26 1.95-.4 2.96-.4s2.02.14 2.96.4c2.29-1.58 3.3-1.25 3.3-1.25.65 1.66.24 2.87.12 3.14.77.84 1.24 1.92 1.24 3.23 0 4.62-2.8 5.62-5.48 5.93.43.38.83 1.13.83 2.27v3.36c0 .32.22.7.83.58A12 12 0 0024 12.5C24 5.87 18.63.5 12 .5z" />
+  </svg>
+);
+
+export const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8.34 19H5.67V9h2.67v10zM7 7.67A1.67 1.67 0 117 4.33a1.67 1.67 0 010 3.34zm12 11.33h-2.67v-4.8c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55V19h-2.66V9h2.55v1.37h.04a2.8 2.8 0 012.53-1.38c2.7 0 3.2 1.78 3.2 4.1V19z" />
+  </svg>
+);
+
+export const MailIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+  </svg>
+);
+
+// --- LEETCODE ICON ---
+
+export const LeetCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="#FFA116" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <polyline points="15 6 9 12 15 18" />
+  </svg>
+);
+
+
+// --- TECH ICONS ---
+
+export const PythonIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" {...props}>
+    <path fill="#3776AB" d="M12 0c-1.7 0-3 .3-3 2v3h6V2c0-1.7-1.3-2-3-2z" />
+    <path fill="#FFD43B" d="M12 24c1.7 0 3-.3 3-2v-3h-6v3c0 1.7 1.3 2 3 2z" />
+    <path
+      fill="#3776AB"
+      d="M5 8V5a3 3 0 013-3h4v6H5zM19 16v3a3 3 0 01-3 3h-4v-6h7z"
+    />
+    <path fill="#FFD43B" d="M16 12v-3a3 3 0 00-3-3h-4v6h7zM8 12v3a3 3 0 003 3h4v-6H8z" />
+    <circle cx="9.5" cy="5.5" r="1" fill="#FFD43B" />
+    <circle cx="14.5" cy="18.5" r="1" fill="#3776AB" />
+  </svg>
+);
+
+export const JavaScriptIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" {...props}>
+    <rect width="24" height="24" fill="#f7df1e" />
+    <path
+      d="M6.285 17.575v-7.172h1.683v6.32h.054l4.28-6.32h2.008l-3.326 4.885 3.51 5.48h-2.11l-2.457-3.95-1.512 2.148v1.81h-1.683z"
+      fill="black"
+    />
+     <path d="M14.595 17.575h2.11l-3.41-5.067 3.326-5.335h-2.03l-2.35 4.34-1.37-2.07v-2.27h-1.68v7.17h1.68v-3.7l3.055 4.93z" fill="black" />
+  </svg>
+);
+
+export const SQLIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="#00758F" {...props}>
+    <path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4zM12 21c-4.42 0-8-1.79-8-4v-4c2.09.66 4.81 1 8 1s5.91-.34 8-1v4c0 2.21-3.58 4-8 4zM12 12c-4.42 0-8-1.79-8-4V4c2.09.66 4.81 1 8 1s5.91-.34 8-1v4c0 2.21-3.58 4-8 4z" />
+  </svg>
+);
+
+export const JavaIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" {...props}>
+    <path d="M18.8 16.5c.2-.2.3-.4.4-.7.4-1 .6-2 .6-3.1 0-2.3-.7-4.2-2.2-5.7-1.5-1.5-3.4-2.2-5.7-2.2-2.2 0-4.1.8-5.6 2.3-1.5 1.5-2.2 3.4-2.2 5.6 0 2.2.8 4.1 2.3 5.6 1.5 1.5 3.4 2.2 5.6 2.2 1.4 0 2.7-.3 3.9-.9.4-.2.8-.5 1.2-.8.3-.3.6-.6.8-.9.3-.3.4-.6.4-.9.2-.5.2-1.1 0-1.6zm-5.2-1.8c-.6.6-1.4.9-2.2.9-1.2 0-2.2-.4-3-1.2s-1.2-1.8-1.2-3c0-.8.3-1.6.8-2.2.5-.6 1.2-1 2.1-1.3.8-.2 1.7-.2 2.5 0 .8.2 1.5.6 2.1 1.1s.8 1.1.9 1.8c.1.7 0 1.4-.3 2.1-.3.7-.8 1.3-1.5 1.8z" fill="#f89820"/>
+    <path d="M22 8c.2-.6 0-1.2-.3-1.7-.5-.8-1.4-1.2-2.3-1.1-1.1.1-2 .7-2.4 1.7-.4 1-.2 2.1.5 2.9.7.8 1.8 1 2.8.6.8-.3 1.4-1 1.7-1.8z" fill="#5382a1"/>
+  </svg>
+);
+
+export const ReactIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="-11.5 -10.23174 23 20.46348" {...props}>
+    <circle cx="0" cy="0" r="2.05" fill="#61DAFB" />
+    <g stroke="#61DAFB" strokeWidth="1" fill="none">
+      <ellipse rx="11" ry="4.2" />
+      <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+      <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+    </g>
+  </svg>
+);
+
+export const AngularIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" {...props}>
+    <path d="M12 0L1.5 4 3 18.5 12 24 21 18.5 22.5 4 12 0Z" fill="#DD0031" />
+    <path d="M12 0V4.5L18.5 18H21L12 0Z" fill="#C3002F" />
+    <path d="M12 4.5L5.5 18H8.5L10 14H14L15.5 18H18.5L12 4.5Z" fill="#FFFFFF" />
+  </svg>
+);
+
+export const FlaskIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+        <path d="M6.2,14.7c-0.6-1.2-0.6-2.6-0.1-3.9C6,11,6,11.3,6.2,11.4c0.7,0.5,1.5,0.7,2.3,0.7c1,0,2-0.4,2.7-1.1 c1.1-1,1.3-2.6,0.5-3.8c-0.6-0.9-1.6-1.5-2.7-1.5c-0.9,0-1.7,0.3-2.4,0.9c-0.1,0.1-0.2,0.1-0.3-0.1c-0.3-0.5-0.5-1-0.5-1.6 c0-1.7,1.4-3.1,3.1-3.1c1.3,0,2.5,0.8,2.9,2.1c0.5,1.2,0.3,2.6-0.6,3.6c-0.8,0.9-2,1.4-3.2,1.4c-0.6,0-1.2-0.1-1.7-0.4 c0,0.1,0,0.2-0.1,0.3c-0.3,0.8-0.3,1.6,0,2.4L6.2,14.7z" />
+        <path d="M17.8,9.3c0.6,1.2,0.6,2.6,0.1,3.9c-0.1,0.2-0.1-0.1-0.2-0.2c-0.7-0.5-1.5-0.7-2.3-0.7c-1,0-2,0.4-2.7,1.1 c-1.1,1-1.3,2.6-0.5,3.8c0.6,0.9,1.6,1.5,2.7,1.5c0.9,0,1.7-0.3,2.4-0.9c0.1-0.1,0.2-0.1,0.3,0.1c0.3,0.5,0.5,1,0.5,1.6 c0,1.7-1.4,3.1-3.1,3.1c-1.3,0-2.5-0.8-2.9-2.1c-0.5-1.2-0.3-2.6,0.6-3.6c0.8-0.9,2-1.4,3.2-1.4c0.6,0,1.2,0.1,1.7,0.4 C17.7,9.5,17.7,9.4,17.8,9.3z" />
+    </svg>
+);
+
+
+export const DockerIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="#2496ED" {...props}>
+    <path d="M22.75 11.85H21v-2.3h-2.3v2.3h-2.3v2.3H21v2.3h1.75c.5 0 .75-.25.75-.75v-3.1c0-.5-.25-.75-.75-.75zM0 17.2c.1 2.4 2 4.3 4.4 4.3h11.6c4.3 0 7.4-2.9 7.4-7.4 0-.5 0-1-.1-1.5H0v4.6zM2.3 9.55h2.3v2.3H2.3v-2.3zm2.9 0h2.3v2.3H5.2v-2.3zm2.9 0h2.3v2.3H8.1v-2.3zm2.9 0h2.3v2.3h-2.3v-2.3zm2.9 0h2.3v2.3h-2.3v-2.3zM5.2 12.4h2.3v2.3H5.2v-2.3zm2.9 0h2.3v2.3H8.1v-2.3zm2.9 0h2.3v2.3h-2.3v-2.3z" />
+  </svg>
+);
+
+export const PowerBIIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="#F2C811" {...props}>
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path
+      d="M6 17h2V9H6v8zm4 0h2V6h-2v11zm4 0h2v-5h-2v5z"
+      fill="black"
+    />
+  </svg>
+);
+
+export const MySQLIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" {...props}>
+        <path d="M12.2 3.3c-2 .2-3.8 1-5.2 2.4-1.2 1.2-2 2.7-2.3 4.4-.3 1.7-.1 3.5.6 5.1s2 3 3.5 3.9c1.6.8 3.3 1.1 5.1.8s3.4-.9 4.8-2.2c1.3-1.4 2.2-3.1 2.4-5 .2-1.8-.2-3.7-1.1-5.3-.9-1.6-2.4-2.8-4.2-3.5-1.2-.5-2.5-.7-3.8-.6zm-2 13.5c-.8.1-1.6-.2-2.2-.7s-1-1.3-1.1-2.2c-.1-.8.2-1.6.7-2.2s1.3-1 2.2-1.1c.8-.1 1.6.2 2.2.7s1 1.3 1.1 2.2c.1.8-.2 1.6-.7 2.2s-1.3 1-2.2 1.1z" fill="#00758f"/>
+        <path d="M12.2 3.3c.7 0 1.3.1 2 .2.6.2 1.1.4 1.7.7.5.3 1 .7 1.4 1.1.4.4.8.9 1.1 1.4.3.5.5 1 .7 1.6.2.6.3 1.3.3 2s-.1 1.3-.3 2c-.2.6-.4 1.1-.7 1.6-.3.5-.7 1-1.1 1.4s-.9.8-1.4 1.1c-.5.3-1 .5-1.6.7-.6.2-1.3.3-2 .3v-15z" fill="#e48e00"/>
+        <path d="M13.5 15.3c-1.3.5-2.8.2-3.8-1-.9-1.2-.9-2.8 0-4 .5-.6 1.2-1 2-1.2.7-.2 1.5-.1 2.1.2.7.3 1.2.8 1.5 1.4.3.6.4 1.3.2 2-.2.7-.6 1.3-1.1 1.7-.5.4-1.1.7-1.9.9z" fill="#e48e00"/>
+    </svg>
+);
+
+
+export const SQLiteIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" {...props}>
+        <path d="M3.75 6.25v11.5h16.5V6.25H3.75zm1.5 1.5h13.5v1.5H5.25V7.75zm0 3h13.5v1.5H5.25v-1.5zm0 3h13.5v1.5H5.25v-1.5zm0 3h13.5v1.5H5.25v-1.5z" fill="#003B57"/>
+        <path d="M21.75 4.75L12 1.25 2.25 4.75V2.5h19.5v2.25z" fill="#003B57"/>
+    </svg>
+);
+
+export const AzureIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="#0089D6" {...props}>
+        <path d="M12.1 2.4l-8 5.1-1.2 8.1 4.2 4.1 8-2.6 6-9.1-9-5.6zM7 14.8l-1.4-2.1 4.5-5.9 4.3 8.3-7.4-.3z"/>
+    </svg>
+);
+
+export const GitIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="#F05032" {...props}>
+        <path d="M22.5 11.2c-.2-.7-.7-1.2-1.3-1.5l-8.3-5c-.7-.4-1.5-.4-2.2 0l-8.3 5c-.7.4-1.2.9-1.3 1.5-.2.7 0 1.5.4 2.1l4.9 8.5c.4.6 1 .9 1.7.9h8.6c.7 0 1.4-.4 1.7-.9l4.9-8.5c.4-.6.6-1.4.4-2.1zM12 14.8c-1.7 0-3-1.4-3-3s1.4-3 3-3 3 1.4 3 3-1.3 3-3 3z"/>
+    </svg>
+);

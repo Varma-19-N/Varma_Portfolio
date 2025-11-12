@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nandi Madan Gopal Varma | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #05060A;
+        color: #E0E0E0;
+        overflow: hidden; /* Prevent native scrollbars */
+      }
+      
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 40s linear infinite;
+      }
+      .marquee-container:hover .animate-marquee {
+        animation-play-state: paused;
+      }
+
+      @keyframes marquee-tech {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-marquee-tech {
+        animation: marquee-tech 60s linear infinite;
+      }
+      .marquee-container:hover .animate-marquee-tech {
+        animation-play-state: paused;
+      }
+      
+      .shiny-text {
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #e6e6e6 25%,
+          #cfcfcf 50%,
+          #e6e6e6 75%,
+          #ffffff 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow:
+          0 1px 2px rgba(255,255,255,0.7),
+          0 2px 4px rgba(0,0,0,0.25);
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .blinking-cursor {
+        animation: blink 1s step-end infinite;
+        margin-left: 0.1em;
+      }
+
+      .animated-gradient-text .text-content {
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradient-animation linear infinite;
+      }
+
+      @keyframes gradient-animation {
+        from { background-position: 0% center; }
+        to { background-position: 200% center; }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'heading': ['Saira Semi Condensed', 'sans-serif'],
+              'body': ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              'dark-bg': '#05060A',
+              'cyan-glow': '#00FFFF',
+              'violet-glow': '#6A0DAD',
+            },
+            boxShadow: {
+              'glow-cyan': '0 0 15px 2px rgba(0, 255, 255, 0.4)',
+              'glow-violet': '0 0 15px 2px rgba(106, 13, 173, 0.4)',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "@react-three/postprocessing": "https://aistudiocdn.com/@react-three/postprocessing@^3.0.4",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.6",
+    "maath/": "https://aistudiocdn.com/maath@^0.10.8/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
