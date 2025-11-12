@@ -1,5 +1,4 @@
 import { GitHubIcon, LinkedInIcon, MailIcon, LeetCodeIcon } from './components/ui/Icons';
-import React from 'react';
 
 export interface Project {
   title: string;

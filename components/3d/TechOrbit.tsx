@@ -1,4 +1,4 @@
-// FIX: Added a triple-slash directive to include type definitions for @react-three/fiber, which is required to use its custom JSX elements like `group` in TypeScript.
+// FIX: Add React Three Fiber types to resolve JSX element errors for custom components.
 /// <reference types="@react-three/fiber" />
 import React, { useRef, useState, useMemo, Suspense } from 'react';
 import { useFrame } from '@react-three/fiber';
